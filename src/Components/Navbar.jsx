@@ -24,9 +24,9 @@ const Navbar = () => {
         {/* Mobile menu icon */}
         <div className="md:hidden">
           {isOpen ? (
-            <CgClose onClick={toggleMenu} className="text-2xl cursor-pointer hover:text-gray-300" />
+            <CgClose size={30} onClick={toggleMenu} className="text-2xl cursor-pointer hover:text-gray-300" />
           ) : (
-            <CgMenuMotion onClick={toggleMenu} className="text-2xl cursor-pointer hover:text-gray-300" />
+            <CgMenuMotion size={30} onClick={toggleMenu} className="text-2xl cursor-pointer hover:text-gray-300" />
           )}
         </div>
 
@@ -39,13 +39,16 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile menu */}
-        <div className={`absolute top-16 left-0 right-0 bg-active2 md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-          <ul className="flex flex-col items-center space-y-4 py-4">
+        <div className={`absolute top-16 left-0 right-0 bg-active2 md:hidden transition-all duration-300 ease-in-out   ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+          <ul className="flex flex-col items-center space-y-4 py-6  ">
             <li><Link to="/" onClick={toggleMenu} className="hover:text-gray-300 transition-colors duration-300">Home</Link></li>
             <li onClick={toggleMenu} className="hover:text-gray-300 transition-colors duration-300 cursor-pointer">Explore</li>
             <li onClick={toggleMenu} className="hover:text-gray-300 transition-colors duration-300 cursor-pointer">Trending NFTs</li>
             <li><Link to="/about" onClick={toggleMenu} className="hover:text-gray-300 transition-colors duration-300">About</Link></li>
           </ul>
+          <div className='pb-6' >
+            <Button text="Connect Wallet" />
+          </div>
         </div>
 
         <div className="hidden md:block">
