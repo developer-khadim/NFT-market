@@ -1,5 +1,6 @@
 import Button from "./Button";
 import Heroimg from "../assets/hero.png";
+import ButtonTwo from "./ButtonTwo";
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
         </p>
         <div className="flex items-center justify-center lg:justify-start gap-6">
           <Button text="Explore More" />
-          <Button black text="Create" />
+          <ButtonTwo text="Create" />
         </div>
       </div>
       <div className="w-full lg:w-1/2 flex items-center justify-center">
