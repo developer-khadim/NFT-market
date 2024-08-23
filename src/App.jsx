@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="w-full h-screen bg-[#1e1629]">
+    <div className="w-full h-screen ">
       <Router >
         <Navbar />
         <Routes>

@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-4 px-4 md:px-16 text-white">
+    <nav className="py-4 px-4 md:px-20 text-white bg-[#1e1629] ">
       <div className="flex items-center justify-between">
         <img 
           src={logo} 
@@ -32,10 +32,10 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <ul className="hidden md:flex px-10 py-4 space-x-6 uppercase bg-active2">
-          <li><Link to="/" className="hover:text-gray-300 transition-colors duration-300">Home</Link></li>
-          <li className="hover:text-gray-300 transition-colors duration-300 cursor-pointer">Explore</li>
-          <li className="hover:text-gray-300 transition-colors duration-300 cursor-pointer">Trending NFTs</li>
-          <li><Link to="/about" className="hover:text-gray-300 transition-colors duration-300">About</Link></li>
+          <li><Link to="/" className="hover:text-active transition-colors duration-300">Home</Link></li>
+          <li className="hover:text-active transition-colors duration-300 cursor-pointer">Explore</li>
+          <li className="hover:text-active transition-colors duration-300 cursor-pointer">Trending NFTs</li>
+          <li><Link to="/about" className="hover:text-active transition-colors duration-300">About</Link></li>
         </ul>
 
         {/* Mobile menu */}
@@ -46,9 +46,6 @@ const Navbar = () => {
             <li onClick={toggleMenu} className="hover:text-gray-300 transition-colors duration-300 cursor-pointer">Trending NFTs</li>
             <li><Link to="/about" onClick={toggleMenu} className="hover:text-gray-300 transition-colors duration-300">About</Link></li>
           </ul>
-          <div className='pb-6' >
-            <Button text="Connect Wallet" />
-          </div>
         </div>
 
         <div className="hidden md:block">
