@@ -2,6 +2,7 @@ import line from "../assets/Line.png";
 import Collections from "../Components/Collections";
 import Hero from "../Components/Hero";
 import Howitworks from "../Components/Howitworks";
+import JoinedInfluencers from "../Components/JoinedInfluencers";
 import LiveAuction from "../Components/LiveAuction";
 import Textsection from "../Components/Textsection";
 import Trending from "../Components/Trending";
@@ -24,6 +25,7 @@ const Home = () => {
       <Collections />
       <Trending />
       <LiveAuction/>
+      <JoinedInfluencers/>
     </div>
   );
 };

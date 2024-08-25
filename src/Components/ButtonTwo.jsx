@@ -5,20 +5,22 @@ import right from "../assets/btn2right.png";
 const ButtonTwo = ({ full, text }) => {
   return (
     <div className="inline-flex items-center">
-      <img src={left} width={4} height={4} alt="left arrow" className="w-1 h-auto" />
+      <img src={left} alt="left arrow" className="w-[3px] h-auto" />
       <button
         className={`
-          font-bold text-sm sm:text-base
+          font-bold text-xs sm:text-sm md:text-base
           flex items-center justify-center
           transition-all duration-300 
           text-active border-2 border-active
           hover:bg-active hover:text-white 
-          ${full ? 'px-[104px] py-3 sm:px-[139px] sm:py-3' : 'px-3 py-1 sm:px-4 sm:py-2'}
+          ${full 
+            ? 'w-full px-20 py-4 ' 
+            : 'px-2 py-1 sm:px-3 sm:py-1 md:px-4 md:py-2'}
         `}
       >
         {text}
       </button>
-      <img src={right} width={4} height={4} alt="right arrow" className="w-1 h-auto" />
+      <img src={right} alt="right arrow" className="w-[3px] h-auto" />
     </div>
   );
 };
