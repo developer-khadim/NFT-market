@@ -40,7 +40,7 @@ const Trending = () => {
       <div className='pb-6 flex flex-col sm:flex-row sm:justify-between sm:items-end'>
         <div className='mb-4 sm:mb-0'>
           <p className="capitalize text-white/60 text-xs">most loved NFTs of the time</p>
-          <h1 className='capitalize text-2xl sm:text-3xl lg:text-4xl font-medium py-2'>hot trending nFTs</h1>
+          <h1 className='capitalize text-3xl sm:text-4xl lg:text-5xl font-medium py-4 bg-clip-text text-white'>hot trending nFTs</h1>
         </div>
         <div className='hidden sm:block'>
           <ButtonTwo text="View All" />

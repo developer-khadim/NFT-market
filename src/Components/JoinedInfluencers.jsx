@@ -4,6 +4,8 @@ import person2 from "../assets/Pictures.png";
 import person3 from "../assets/Picture3.png";
 import person4 from "../assets/Picture4.png";
 import ButtonTwo from "../Components/ButtonTwo";
+import { HiMiniCheckBadge } from "react-icons/hi2";
+
 
 const InfluencerCard = ({ image, index }) => (
   <div
@@ -17,20 +19,20 @@ const InfluencerCard = ({ image, index }) => (
         className="w-full h-full object-cover"
       />
     </div>
-    <div className="flex items-center justify-between w-full" >
+    <div className="flex items-center justify-between w-full px-2 " >
      <div className="" >
-         <h3 className="text-lg font-semibold mt-2">
-        John Smith
+         <h3 className="text-lg font-semibold mt-2 flex pb-2 items-center gap-2">
+        John Smith <HiMiniCheckBadge color="lightgreen" />
       </h3>
-      <p className="text-sm text-gray-800" >@JohnSmith</p>
+      <p className="text-sm text-gray-300" >@JohnSmith</p>
      </div>
-        <button className="py-3 px-8 bg-transparent border-2 border-active rounded-full" > Follow </button>
+        <button className="py-3 px-8 bg-transparent border-2 border-active rounded-full hover:bg-active hover:text-white hover:border-none cursor-pointer " > Follow </button>
     </div>
   </div>
 );
 
 const JoinedInfluencers = () => {
-  const influencers = [person1, person2, person3, person4];
+  const influencers = [person1, person2, person3, person4,person1 ,person4,person3,person2];
 
   return (
     <div className="text-white py-6 px-4 min-h-screen max-w-7xl mx-auto">
@@ -39,7 +41,7 @@ const JoinedInfluencers = () => {
           <p className="capitalize text-white/60 text-xs sm:text-sm">
             Watch and follow celebrities to get the best collection of NFTs
           </p>
-          <h1 className="capitalize text-2xl sm:text-3xl lg:text-4xl font-medium py-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+          <h1 className="capitalize text-3xl sm:text-4xl lg:text-5xl font-medium py-4 bg-clip-text text-white">
             Joined Influencers
           </h1>
         </div>

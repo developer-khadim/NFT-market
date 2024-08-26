@@ -26,11 +26,11 @@ const NFTCard = ({ nft, index }) => (
         <p className='text-right text-[10px] sm:text-xs text-gray-400'>($ 654,874.86)</p>
       </div>
     </div>
-    <div className='mt-auto w-full'>
+   <div className='mt-auto w-full flex items-center justify-center'>
       <ButtonTwo full text="Buy Now" />
     </div>
   </div>
-)
+);
 
 const LiveAuction = () => {
   const nfts = [nft1, nft2, nft3, nft4, nft1, nft2, nft3, nft4];
@@ -40,7 +40,11 @@ const LiveAuction = () => {
       <div className='pb-6 sm:pb-8 md:pb-12 flex flex-col sm:flex-row sm:justify-between sm:items-end'>
         <div className='mb-4 sm:mb-0'>
           <p className="capitalize text-white/60 text-xs sm:text-sm">most appreciated NFTs on sale for the day</p>
-          <h1 className='capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium py-2'>Live Auction NFTs</h1>
+          <h1 className='capitalize text-3xl sm:text-4xl lg:text-5xl font-medium py-4 bg-clip-text text-white'>Live Auction NFTs</h1>
+        </div>
+        {/* Centering the button on smaller screens */}
+        <div className='sm:hidden flex justify-center'>
+          <ButtonTwo text="View All" />
         </div>
         <div className='hidden sm:block'>
           <ButtonTwo text="View All" />
@@ -52,7 +56,7 @@ const LiveAuction = () => {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default LiveAuction;

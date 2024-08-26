@@ -1,14 +1,18 @@
+import React from "react";
 import line from "../assets/Line.png";
 import Collections from "../Components/Collections";
 import Hero from "../Components/Hero";
 import Howitworks from "../Components/Howitworks";
 import JoinedInfluencers from "../Components/JoinedInfluencers";
 import LiveAuction from "../Components/LiveAuction";
+import Subscribe from "../Components/Subscribe";
 import Textsection from "../Components/Textsection";
 import Trending from "../Components/Trending";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
+    <>
     <div className="w-full min-h-screen px-4 md:px-20 bg-[#1e1629]">
       <div className="pt-20 text-white">
         <Hero />
@@ -26,7 +30,12 @@ const Home = () => {
       <Trending />
       <LiveAuction/>
       <JoinedInfluencers/>
+      <Subscribe/>
     </div>
+    <div className="w-full h-auto bg-[#170f22] "  >
+      <Footer/>
+    </div>
+    </>
   );
 };
 
